@@ -5,9 +5,9 @@
   padding: 0;
 }
 
-.col-2{
-  border-style: dashed;
-  border-color: red;
+#contentdiv{
+  border-style: solid;
+  border-color: purple;
 }
 
 .col-10{

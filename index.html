@@ -20,16 +20,30 @@
     <script src="js/main.js"></script>
     <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
-    <title></title>
+    <title>Project Devin</title>
   </head>
   <body>
-    <div class="container">
-      <div class="row align-items-start">
+    <div class="container-fluid">
+      <row class="row align-items-start">
         <!--- ####### Nav Bar section ###### --->
         <div class="col-2" id="sidenavbar">
-          NAV
+          <header>
+            Devin Wilcox
+          </header>
+          <ul class="nav flex-column navbar-nav">
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Galleries<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#cityscapes">Cityscapes</a></li>
+                <li><a href="#portraits">Portraits</a></li>
+                <li><a href="#food">Food</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
-        <div class="col-10" id="contentdiv">
+        <!--- ####### Content Section ####### --->
+        <div class="col" id="contentdiv">
           content div
           <div class="row justify-content-evenly">
             <div class="col-4">
@@ -53,7 +67,7 @@
           <!--- ###### about me section ###### --->
           <div class="row justify-content-center" id="aboutmediv">
             <div class="col-12 clearfix">
-              <img src="images/devin_about_us.jpg" class="col-sm-3 float-sm-end" alt="Devin Wilcox headshot">
+              <img src="images/Devin_Wilcox_Pic.jpg" class="col-sm-3 float-sm-end" alt="Devin Wilcox headshot">
               <p>This is the part where devin writes about himself</p>
               <p>His past, present, and future</p>
               <p>All of his hopes and dreamstextfillertextfillertextfillertextfillertextfillertextfillertextfillertextfillertextfiller</p>
@@ -76,7 +90,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </row>
     </div>
   </body>
 </html>
