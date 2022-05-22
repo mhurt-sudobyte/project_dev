@@ -5,37 +5,52 @@
   padding: 0;
 }
 
+#homepage{
+  text-align: center;
+  font-family: monospace;
+}
+
 #contentdiv{
   border-style: solid;
   border-color: purple;
 }
 
-.col-10{
+#sidenavbar{
   border-style: solid;
   border-color: blue;
 }
 
-.col-4{
-  border-style: dashed;
-  border-color: green;
+#picdiv{
+  border: solid;
+  border-color: black;
+  padding-left: 0%;
+  padding-right: 0%;
+  margin: 0%;
 }
 
-.col-2{
-  border-style: dashed;
-  border-color: pink;
+#pics{
+  backgroud-color: red;
 }
 
-.col-3{
-  border-style: dashed;
-  border-color: purple;
-}
-
-.col-7{
+#contactmediv{
   border-style: dashed;
   border-color: black;
 }
 
-.col-12{
+#aboutmediv{
   border-style: solid;
   border-color: black;
+}
+
+#DevinName{
+  color: #2f4f4f;
+  font-style: italic;
+  font-size: 200%;
+  margin: auto;
+  width: 100%;
+}
+
+#page_background{
+  background-color: #dcdcdc;
+
 }
