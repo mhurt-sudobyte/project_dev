@@ -5,19 +5,40 @@
   padding: 0;
 }
 
-#homepage{
+
+
+#sectionheadertext{
   text-align: center;
   font-family: monospace;
 }
 
-#contentdiv{
-  border-style: solid;
-  border-color: purple;
+#header{
+  border: solid;
+  background-color: #800020;
 }
 
-#sidenavbar{
+#sig{
+  color: #fcffdb;
+}
+
+#contentcolumn{
   border-style: solid;
+  border-color: purple;
+  margin-right: 0;
+}
+
+#navcolumn{
+  border: solid;
   border-color: blue;
+}
+
+.no-underline{
+  text-decoration: none;
+  text-decoration-color: black;
+}
+
+.no-bullet{
+  list-style-type: none;
 }
 
 #picdiv{
@@ -39,7 +60,8 @@
 
 #aboutmediv{
   border-style: solid;
-  border-color: black;
+  border-color: pink;
+  background-color: #d3d3d3;
 }
 
 #DevinName{
@@ -51,6 +73,6 @@
 }
 
 #page_background{
-  background-color: #dcdcdc;
+  background-color: white;
 
 }

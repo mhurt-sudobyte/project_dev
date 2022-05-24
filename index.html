@@ -24,32 +24,55 @@
   <body>
     <div class="container-fluid" id="page_background">
       <row class="row align-items-start">
+        <!--- Red header bar with signiture --->
+        <header id="header">
+          <h2 id="sig" class="p-3">Devin Wilcox</h2>
+        </header>
+      </row>
+      <row class="row align-items-start">
         <!--- ####### Nav Bar section ###### --->
-        <div class="col-2" id="sidenavbar">
-          <header id="DevinName">
-            Devin Wilcox
-          </header>
-          <ul class="nav flex-column navbar-nav">
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Galleries<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="Cityscapes.html">Cityscapes</a></li>
-                <li><a href="Portraits.html">Portraits</a></li>
-                <li><a href="Food.html">Food</a></li>
-              </ul>
-            </li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+        <div class="col justify-content-start" id="navcolumn">
+          <nav class="navbar">
+            <div class = "panel-group" id = "accordion">
+              <div class = "panel panel-default">
+                <!--- Gallery dropdown --->
+                <div class = "panel-heading">
+                  <h4 class = "panel-title">
+                    <a data-toggle = "collapse" data-parent = "#accordion" href = "#collapsegallery" class="no-underline">
+                      Galleries
+                    </a>
+                  </h4>
+                </div>
+                <div id = "collapsegallery" class = "panel-collapse collapse in">
+                  <div class = "panel-body">
+                    <ul class="no-bullet">
+                      <li><a href="Cityscapes.html" class="no-underline" style="color: #000000">Cityscapes</a></li>
+                      <li><a href="Portraits.html" class="no-underline">Portraits</a></li>
+                      <li><a href="Food.html" class="no-underline">Food</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--- About Me link --->
+                <div class = "panel-heading">
+                  <h4 class = "panel-title"><a href = "#aboutmediv" class="no-underline">About Me</a></h4>
+                </div>
+                <!--- Contact Me link --->
+                <div class = "panel-heading">
+                  <h4 class = "panel-title"><a href = "#contactmediv" class="no-underline">Contact Me</a></h4>
+                </div>
+              </div>
+            </div>
+          </nav>
         </div>
         <!--- ####### Content Section ####### --->
-        <div class="col" id="contentdiv">
+        <div class="col-9" id="contentcolumn">
           <row class="row justify-content-center">
-            <div class="col-12 justify content-center" id="homepage">
+            <div class="col-12 justify content-center" id="sectionheadertext">
               <h1>- Home Page -</h1>
             </div>
           </row>
           <!--- ####### Home Gallery ######## -->
-          <row class="row justify-content-evenly">
+          <row class="row justify-content-center">
             <picture class="col-3 align-self-center" id="picdiv">
               <img src="images/home_and_portraits_photo_four.jpg" class="img-fluid p-1 mx-auto d-block" alt="black women with flowers in hair">
             </picture>
@@ -68,14 +91,21 @@
           </row>
           <!--- ###### about me section ###### --->
           <div class="row justify-content-center" id="aboutmediv">
-            <div class="col-12 clearfix">
-              <img src="images/Devin_Wilcox_Pic.jpg" class="img-fluid col-sm-3 float-sm-end" alt="Devin Wilcox headshot">
-              <p>This is the part where devin writes about himself</p>
-              <p>His past, present, and future</p>
-              <p>All of his hopes and dreamstextfillertextfillertextfillertextfillertextfillertextfillertextfillertextfillertextfiller</p>
-              <p>filler textfiller textfiller textfiller textfiller textfiller textfiller textfiller
-                 textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller text</p>
-            </div>
+            <row class="row justify-content-center">
+              <div class="col-12 justify content-center" id="sectionheadertext">
+                <h1 class="p-2">- About Me -</h1>
+              </div>
+            </row>
+            <row class="row justify-content-center">
+              <div class="col-12 clearfix">
+                <img src="images/Devin_Wilcox_Pic.jpg" class="img-fluid col-sm-3 float-sm-end" alt="Devin Wilcox headshot">
+                <p>This is the part where devin writes about himself</p>
+                <p>His past, present, and future</p>
+                <p>All of his hopes and dreamstextfiller textfillertextfillertextfill ertextfillertextfi llertextfill ertextfillertextfiller</p>
+                <p>filler textfiller textfiller textfiller textfiller textfiller textfiller textfiller
+                   textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller text</p>
+              </div>
+            </row>
           </div>
           <!--- ####### Contact Me Section ######## -->
           <div class="row justify-content-center" id="contactmediv">
@@ -88,7 +118,7 @@
               </div>
             </div>
             <div class="col-12">
-              <textarea name="request" rows="3" cols="120" placeholder="Discribe your project idea"></textarea>
+              <textarea name="request" rows="d-inline" cols="d-inline" placeholder="Discribe your project idea"></textarea>
             </div>
           </div>
         </div>

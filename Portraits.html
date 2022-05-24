@@ -24,23 +24,75 @@
   <body>
     <div class="container-fluid" id="page_background">
       <row class="row align-items-start">
+        <!--- Red header bar with signiture --->
+        <header id="header">
+          <h2 id="sig" class="p-3">Devin Wilcox</h2>
+        </header>
+      </row>
+      <row class="row align-items-start">
         <!--- ####### Nav Bar section ###### --->
-        <div class="col-2" id="sidenavbar">
-          <header id="DevinName">
-            Devin Wilcox
-          </header>
-          <ul class="nav flex-column navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Galleries<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="Cityscapes.html">Cityscapes</a></li>
-                <li><a href="Portraits.html">Portraits</a></li>
-                <li><a href="Food.html">Food</a></li>
-              </ul>
-            </li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+        <div class="col justify-content-start" id="navcolumn">
+          <nav class="navbar">
+            <div class = "panel-group" id = "accordion">
+              <div class = "panel panel-default">
+                <!--- Home Link --->
+                <div class = "panel-heading">
+                  <h4 class = "panel-title"><a href = "index.html#" class="no-underline">Home</a></h4>
+                </div>
+                <!--- Gallery dropdown --->
+                <div class = "panel-heading">
+                  <h4 class = "panel-title">
+                    <a data-toggle = "collapse" data-parent = "#accordion" href = "#collapsegallery" class="no-underline">
+                      Galleries
+                    </a>
+                  </h4>
+                </div>
+                <div id = "collapsegallery" class = "panel-collapse collapse in">
+                  <div class = "panel-body">
+                    <ul class="no-bullet">
+                      <li><a href="Cityscapes.html" class="no-underline" style="color: #000000">Cityscapes</a></li>
+                      <li><a href="Portraits.html" class="no-underline">Portraits</a></li>
+                      <li><a href="Food.html" class="no-underline">Food</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!--- About Me link --->
+                <div class = "panel-heading">
+                  <h4 class = "panel-title"><a href = "index.html#aboutmediv" class="no-underline">About Me</a></h4>
+                </div>
+                <!--- Contact Me link --->
+                <div class = "panel-heading">
+                  <h4 class = "panel-title"><a href = "#contactmediv" class="no-underline">Contact Me</a></h4>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="col-9" id="contentcolumn">
+          <row class="row justify-content-center">
+            <div class="col-12 justify content-center" id="sectionheadertext">
+              <h1>- Portraits -</h1>
+            </div>
+          </row>
+          <!--- ####### Home Gallery ######## -->
+          <row class="row justify-content-center">
+            <picture class="col-3 align-self-center" id="picdiv">
+              <img src="images/home_and_portraits_photo_four.jpg" class="img-fluid p-1 mx-auto d-block" alt="black women with flowers in hair">
+            </picture>
+            <picture class="col-4 align-self-center" id="picdiv">
+              <img src="images/home_and_portraits_photo_one.jpg" class="img-fluid p-1 mx-auto d-block" alt="white women in black top">
+            </picture>
+            <picture class="col-4 align-self-center" id="picdiv">
+              <img src="images/home_and_portraits_photo_three.jpg" class="img-fluid p-1 mx-auto d-block" alt="black and white photo of women">
+            </picture>
+            <picture class="col-4 align-self-center" id="picdiv">
+              <img src="images/home_and_portraits_photo_two.jpg" class="img-fluid p-1 mx-auto d-block" alt="women in sunlight leaning against door">
+            </picture>
+            <picture class="col-4 align-self-center" id="picdiv">
+              <img src="images/main_page_refrence_photo_five.jpg" class="img-fluid p-1 mx-auto d-block" alt="asian man pointing a camera upwards">
+            </picture>
+          </row>
         </div>
       </row>
     </div>
