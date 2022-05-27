@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="JavaScript" href="js/main.js">
     <!-- JavaScript Bundle  -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -26,20 +27,20 @@
       <row class="row align-items-start">
         <!--- Red header bar with signiture --->
         <header id="header">
-          <h2 id="sig" class="p-3">Devin Wilcox</h2>
+          <img class="img-fluid" src="images/Devin Sig.png" alt="signature" id="signature">
         </header>
       </row>
       <row class="row align-items-start">
         <!--- ####### Nav Bar section ###### --->
-        <div class="col justify-content-start" id="navcolumn">
-          <nav class="navbar">
+        <div class="col justify-content-start">
+          <nav class="navbar" id="navbar">
             <div class = "panel-group" id = "accordion">
               <div class = "panel panel-default">
                 <!--- Gallery dropdown --->
                 <div class = "panel-heading">
                   <h4 class = "panel-title">
-                    <a data-toggle = "collapse" data-parent = "#accordion" href = "#collapsegallery" class="no-underline">
-                      Galleries
+                    <a data-toggle = "collapse" data-parent = "#accordion" href = "#collapsegallery" class="no-underline" id="gallery">
+                      Galleries <i class="fa fa-chevron-down"></i>
                     </a>
                   </h4>
                 </div>
@@ -65,7 +66,7 @@
           </nav>
         </div>
         <!--- ####### Content Section ####### --->
-        <div class="col-9" id="contentcolumn">
+        <div class="col-10" id="contentcolumn">
           <row class="row justify-content-center">
             <div class="col-12 justify content-center" id="sectionheadertext">
               <h1>- Home Page -</h1>
@@ -101,7 +102,7 @@
               <button role="button" class="btn btn-outline-primary col-md-3 ms-md-auto" name="Foodbutton" href="Food.html">More like this</button>
             </div>
           </row>
-          
+
           <!--- ###### about me section ###### --->
           <div class="row justify-content-center" id="aboutmediv">
             <row class="row justify-content-center">
@@ -109,31 +110,31 @@
                 <h1 class="p-2">- About Me -</h1>
               </div>
             </row>
-            <row class="row justify-content-center">
-              <div class="col-12 clearfix">
-                <img src="images/Devin_Wilcox_Pic.jpg" class="img-fluid col-sm-3 float-sm-end" alt="Devin Wilcox headshot">
+            <row class="row justify-content-evenly">
+              <div class="col">
                 <p>This is the part where devin writes about himself</p>
                 <p>His past, present, and future</p>
                 <p>All of his hopes and dreamstextfiller textfillertextfillertextfill ertextfillertextfi llertextfill ertextfillertextfiller</p>
                 <p>filler textfiller textfiller textfiller textfiller textfiller textfiller textfiller
                    textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller text</p>
+                   <br>
+                <img class="img-md" src="images/Devin Sig.png" alt="signature" id="signature">
+              </div>
+              <div class="col">
+                <img src="images/Devin_Wilcox_Pic.jpg" class="img-fluid float-sm-center" alt="Devin Wilcox headshot">
               </div>
             </row>
           </div>
+
           <!--- ####### Contact Me Section ######## -->
           <div class="row justify-content-center" id="contactmediv">
-            <div class="row justify-content-evenly">
-              <div class="col-6">
-                <input type="firstname" class="form-control" id="FirstNameInput" placeholder="First Name">
+            <div class="container">
+              <div class="row justify-content-center">
+                <button type="button" class="btn col-md-4 btn-lg" name="Contact Now"><a href="mailto:sudobytesolutions@sudobye.com? subject=Project Inquary" class="no-underline">Contact Now</a></button>
               </div>
-              <div class="col-6">
-                <input type="lastname" class="form-control" id="LastNameInput" placeholder="Last Name">
-              </div>
-            </div>
-            <div class="col-12">
-              <textarea name="request" rows="d-inline" cols="d-inline" placeholder="Discribe your project idea"></textarea>
             </div>
           </div>
+
         </div>
       </row>
     </div>
