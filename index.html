@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="Software Development Company">
-    <meta name="keywords" content="software development, web development, sudobye, sudobye solutions, graphic design, software development company, website, website developers, system software">
+    <meta name="keywords" content="software development, web development, sudobtye, sudobtye solutions, graphic design, software development company, website, website developers, system software">
     <meta name="SudoByte Solutions" content="SudoByte Solutions">
     <meta property="og:url" content="https://sudobyte.com/">
     <meta property="og:site_name" content="SudoByte Solutions">
@@ -17,126 +17,172 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
     <title>Devin Wilcox</title>
   </head>
   <body>
-    <div class="container-fluid" id="page_background">
-      <row class="row align-items-start">
-        <!--- Red header bar with signiture --->
-        <header id="header">
-          <img class="img-fluid" src="images/Devin Sig.png" alt="signature" id="signature">
-        </header>
-      </row>
-      <row class="row align-items-start">
-        <!--- ####### Nav Bar section ###### --->
-        <div class="col justify-content-start">
-          <nav class="navbar" id="navbar">
-            <div class = "panel-group" id = "accordion">
-              <div class = "panel panel-default">
-                <!--- Gallery dropdown --->
-                <div class = "panel-heading">
-                  <h4 class = "panel-title">
-                    <a data-toggle = "collapse" data-parent = "#accordion" href = "#collapsegallery" class="no-underline" id="gallery">
-                      Galleries <i class="fa fa-chevron-down"></i>
-                    </a>
-                  </h4>
-                </div>
-                <div id = "collapsegallery" class = "panel-collapse collapse in">
-                  <div class = "panel-body">
-                    <ul class="no-bullet">
-                      <li><a href="Cityscapes.html" class="no-underline" style="color: #000000">Cityscapes</a></li>
-                      <li><a href="Portraits.html" class="no-underline">Portraits</a></li>
-                      <li><a href="Food.html" class="no-underline">Food</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <!--- About Me link --->
-                <div class = "panel-heading">
-                  <h4 class = "panel-title"><a href = "#aboutmediv" class="no-underline">About Me</a></h4>
-                </div>
-                <!--- Contact Me link --->
-                <div class = "panel-heading">
-                  <h4 class = "panel-title"><a href = "#contactmediv" class="no-underline">Contact Me</a></h4>
+    <row class="row align-items-start">
+      <!--- Red header bar with signiture --->
+      <header id="header">
+        <img class="img-fluid" src="images/Devin Sig.png" alt="signature" id="signature">
+      </header>
+    </row>
+
+    <!--- Nav Section --->
+    <nav class="nav sticky-top">
+      <div class="row">
+        <a class="nav-link" data-bs-toggle="collapse" role="link" href="#collapsegallery"
+          aria-expanded="false" aria-controls="collapsegallery" id="gallery">Galleries<i class="fa fa-chevron-down"></i></a>
+        <div class="collapse" id="collapsegallery">
+          <ul class="no-bullet">
+            <li><a href="#Cityscapes.html" class="no-underline">Cityscapes</a></li>
+            <li><a href="#Portraits.html" class="no-underline">Portraits</a></li>
+            <li><a href="#Food.html" class="no-underline">Food</a></li>
+          </ul>
+        </div>
+        <a class="nav-link" href="#aboutmediv">About Me</a>
+        <a class="nav-link" href="#contactmediv">Contact Me</a>
+      </div>
+    </nav>
+
+
+      <!--- Carousel Section ---->
+      <div id="carousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/home_and_portraits_photo_four.jpg" class="d-block img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/home_and_portraits_photo_one.jpg" class="d-block img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/home_and_portraits_photo_three.jpg" class="d-block img-fluid" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    <row class="row align-items-start">
+      <!--- ####### Nav Bar section ###### --->
+      <div class="col justify-content-start">
+        <nav class="navbar" id="navbar">
+          <div class = "panel-group" id = "accordion">
+            <div class = "panel panel-default">
+              <!--- Gallery dropdown --->
+              <div class = "panel-heading">
+                <h4 class = "panel-title">
+                  <a data-toggle = "collapse" data-parent = "#accordion" href = "#collapsegallery" class="no-underline" id="gallery">
+                    Galleries <i class="fa fa-chevron-down"></i>
+                  </a>
+                </h4>
+              </div>
+              <div id = "collapsegallery" class = "panel-collapse collapse in">
+                <div class = "panel-body">
+                  <ul class="no-bullet">
+                    <li><a href="Cityscapes.html" class="no-underline" style="color: #000000">Cityscapes</a></li>
+                    <li><a href="Portraits.html" class="no-underline">Portraits</a></li>
+                    <li><a href="Food.html" class="no-underline">Food</a></li>
+                  </ul>
                 </div>
               </div>
+              <!--- About Me link --->
+              <div class = "panel-heading">
+                <h4 class = "panel-title"><a href = "#aboutmediv" class="no-underline">About Me</a></h4>
+              </div>
+              <!--- Contact Me link --->
+              <div class = "panel-heading">
+                <h4 class = "panel-title"><a href = "#contactmediv" class="no-underline">Contact Me</a></h4>
+              </div>
             </div>
-          </nav>
-        </div>
-        <!--- ####### Content Section ####### --->
-        <div class="col-10" id="contentcolumn">
+          </div>
+        </nav>
+      </div>
+      <!--- ####### Content Section ####### --->
+      <div class="col-10" id="contentcolumn">
+        <row class="row justify-content-center">
+          <div class="col-12 justify content-center" id="sectionheadertext">
+            <h1>- Home Page -</h1>
+          </div>
+        </row>
+        <!--- Cityscape homepage section --->
+        <row class="row justify-content-start">
+          <div class="col-4 align-self-center">
+            <img src="images/main_page_refrence_photo_one.jpg" alt="downtown street with sunset" class="img-fluid">
+          </div>
+          <div class="col align-self-center">
+            <p class="d-flex">Cityscapes are a beautiful thing to take pictures of. the urban feel is so cool. i love the city. yay city.</p>
+            <button role="button" class="btn btn-outline-secondary col-md-3 offset-md-4" name="Cityscapesbutton" href="Cityscapes.html">More like this</button>
+          </div>
+        </row>
+        <!--- Portraits homepage section --->
+        <row class="row justify-content-end">
+          <div class="col align-self-center">
+            <p class="d-flex">Portraits are pictures of people. people are human beings with faces. they normally have a set of arms and legs, but sometimes those fall off.</p>
+            <button role="button" class="btn btn-outline-primary col-md-3 offset-md-4" name="Portraitsbutton" href="Portraits.html">More like this</button>
+          </div>
+          <div class="col-4 align-self-center">
+            <img src="images/portraits_photo_one.jpg" alt="man in suit with hand near face" class="img-fluid">
+          </div>
+        </row>
+        <!--- Food homepage section --->
+        <row class="row justify-content-start">
+          <div class="col-4 align-self-center">
+            <img src="images/portraits_photo_three.jpg" alt="Black women looking like a snack" class="img-fluid">
+          </div>
+          <div class="col align-self-center">
+            <p class="d-flex">This is all food pirtures, where the camera takes a picture of food, and its great. what else do youi need outher than some food and water. thats literally all we nneed as humans so here you go, free food you phucks</p>
+            <button role="button" class="btn btn-outline-danger col-md-3 offset-md-4" name="Foodbutton" href="Food.html">More like this</button>
+          </div>
+        </row>
+
+        <!--- ###### about me section ###### --->
+        <div class="row justify-content-center" id="aboutmediv">
           <row class="row justify-content-center">
             <div class="col-12 justify content-center" id="sectionheadertext">
-              <h1>- Home Page -</h1>
+              <h1 class="p-2">- About Me -</h1>
             </div>
           </row>
-          <!--- Cityscape homepage section --->
-          <row class="row justify-content-start">
-            <div class="col-4 align-self-center">
-              <img src="images/main_page_refrence_photo_one.jpg" alt="downtown street with sunset" class="img-fluid">
+          <row class="row justify-content-evenly">
+            <div class="col">
+              <p>This is the part where devin writes about himself</p>
+              <p>His past, present, and future</p>
+              <p>All of his hopes and dreamstextfiller textfillertextfillertextfill ertextfillertextfi llertextfill ertextfillertextfiller</p>
+              <p>filler textfiller textfiller textfiller textfiller textfiller textfiller textfiller
+                 textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller text</p>
+                 <br>
+              <img class="img-md" src="images/Devin Sig.png" alt="signature" id="signature">
             </div>
-            <div class="col align-self-center">
-              <p class="d-flex">Cityscapes are a beautiful thing to take pictures of. the urban feel is so cool. i love the city. yay city.</p>
-              <button role="button" class="btn btn-outline-primary col-md-3 ms-md-auto" name="Cityscapesbutton" href="Cityscapes.html">More like this</button>
-            </div>
-          </row>
-          <!--- Portraits homepage section --->
-          <row class="row justify-content-end">
-            <div class="col align-self-center">
-              <p class="d-flex">Portraits are pictures of people. people are human beings with faces. they normally have a set of arms and legs, but sometimes those fall off.</p>
-              <button role="button" class="btn btn-outline-primary col-md-3 ms-md-auto" name="Portraitsbutton" href="Portraits.html">More like this</button>
-            </div>
-            <div class="col-4 align-self-center">
-              <img src="images/portraits_photo_one.jpg" alt="man in suit with hand near face" class="img-fluid">
+            <div class="col">
+              <img src="images/Devin_Wilcox_Pic.jpg" class="img-fluid float-sm-center" alt="Devin Wilcox headshot">
             </div>
           </row>
-          <!--- Food homepage section --->
-          <row class="row justify-content-start">
-            <div class="col-4 align-self-center">
-              <img src="images/portraits_photo_three.jpg" alt="Black women looking like a snack" class="img-fluid">
-            </div>
-            <div class="col align-self-center">
-              <p class="d-flex">This is all food pirtures, where the camera takes a picture of food, and its great. what else do youi need outher than some food and water. thats literally all we nneed as humans so here you go, free food you phucks</p>
-              <button role="button" class="btn btn-outline-primary col-md-3 ms-md-auto" name="Foodbutton" href="Food.html">More like this</button>
-            </div>
-          </row>
-
-          <!--- ###### about me section ###### --->
-          <div class="row justify-content-center" id="aboutmediv">
-            <row class="row justify-content-center">
-              <div class="col-12 justify content-center" id="sectionheadertext">
-                <h1 class="p-2">- About Me -</h1>
-              </div>
-            </row>
-            <row class="row justify-content-evenly">
-              <div class="col">
-                <p>This is the part where devin writes about himself</p>
-                <p>His past, present, and future</p>
-                <p>All of his hopes and dreamstextfiller textfillertextfillertextfill ertextfillertextfi llertextfill ertextfillertextfiller</p>
-                <p>filler textfiller textfiller textfiller textfiller textfiller textfiller textfiller
-                   textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller text</p>
-                   <br>
-                <img class="img-md" src="images/Devin Sig.png" alt="signature" id="signature">
-              </div>
-              <div class="col">
-                <img src="images/Devin_Wilcox_Pic.jpg" class="img-fluid float-sm-center" alt="Devin Wilcox headshot">
-              </div>
-            </row>
-          </div>
-
-          <!--- ####### Contact Me Section ######## -->
-          <div class="row justify-content-center" id="contactmediv">
-            <div class="container">
-              <div class="row justify-content-center">
-                <button type="button" class="btn col-md-4 btn-lg" name="Contact Now"><a href="mailto:sudobytesolutions@sudobye.com? subject=Project Inquary" class="no-underline">Contact Now</a></button>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </row>
-    </div>
+
+        <!--- ####### Contact Me Section ######## -->
+        <div class="row justify-content-center" id="contactmediv">
+          <div class="container">
+            <div class="row justify-content-center">
+              <button type="button" class="btn col-md-4 btn-lg" name="Contact Now"><a href="mailto:sudobytesolutions@sudobye.com? subject=Project Inquary" class="no-underline">Contact Now</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </row>
   </body>
 </html>

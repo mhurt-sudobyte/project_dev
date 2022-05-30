@@ -3,9 +3,13 @@
 *{
   margin: 0;
   padding: 0;
+  font-family:
 }
 
 
+a:hover{
+  color: black;
+}
 
 #sectionheadertext{
   text-align: center;
@@ -29,6 +33,15 @@
 
 #contentcolumn{
   background-color: #f0ffff;
+}
+
+.carousel {
+  max-height: 700px;
+  background-color: darkgrey;
+}
+
+.carousel-inner{
+  width:
 }
 
 #navcolumn{
