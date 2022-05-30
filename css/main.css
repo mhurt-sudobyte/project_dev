@@ -6,6 +6,9 @@
   font-family:
 }
 
+.nav{
+  background-color: #5F9EA0;
+}
 
 a:hover{
   color: black;
@@ -33,6 +36,7 @@ a:hover{
 
 #contentcolumn{
   background-color: #f0ffff;
+  margin: auto;
 }
 
 .carousel {
@@ -44,13 +48,11 @@ a:hover{
   width:
 }
 
-#navcolumn{
 
-}
 
 #signature{
-  width: 15%;
-  height: 15%;
+  width: 50%;
+  height: 30%;
 }
 
 .no-underline{
@@ -62,14 +64,8 @@ a:hover{
   list-style-type: none;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
 
 #picdiv{
-
   padding-left: 0%;
   padding-right: 0%;
   margin: 0%;
@@ -87,15 +83,8 @@ a:hover{
   background-color: #d3d3d3;
 }
 
-#DevinName{
-  color: #2f4f4f;
-  font-style: italic;
-  font-size: 200%;
-  margin: auto;
-  width: 100%;
-}
 
 #page_background{
-  background-color: white;
+  background-color: #f0ffff;
 
 }
