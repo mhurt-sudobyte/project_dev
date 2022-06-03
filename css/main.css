@@ -28,8 +28,13 @@
 }
 
 .carousel {
-  height: 400px;
-  background-color: #838383;
+  height: 75vh;
+  background-color: #f0ffff;
+}
+
+
+.carbtn{
+  color: black;
 }
 
 .btn{
@@ -37,6 +42,9 @@
 
 }
 
+.pic{
+  height: 75vh;
+}
 
 
 #signature{
