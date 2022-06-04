@@ -55,10 +55,11 @@
     </div>
   </nav>
 
-  <div class="container">
 
 
-  <row class="row justify-content-start">
+
+
+  <row class="row me-0 justify-content-start">
     <!--- ####### Content Section ####### --->
     <div class="col-md-11 offset-md-1" id="contentcolumn">
       <row class="row">
@@ -66,10 +67,11 @@
           <h1>- Galleries -</h1>
         </div>
       </row>
-      <!--- Carousel 1 Section ---->
-      <row class="row justify-content-center">
-        <div class="col-12">
-          <div id="carousel1" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="false">
+
+      <div class="row justify-content-evenly">
+        <!--- Carousel 1 Section ---->
+        <div class="col-lg-6 col-sm-12 d-none d-sm-block">
+          <div id="carousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -101,17 +103,15 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+          <row class="row py-2 justify-content-center">
+            <div class="col-auto mx-auto">
+              <a class="btn" href="Cityscapes.html" role="button"><b>More Like This</b></a>
+            </div>
+          </row>
         </div>
-        <row class="row py-2 justify-content-center">
-          <div class="col-auto mx-auto">
-            <a class="btn" href="Cityscapes.html" role="button"><b>More Like This</b></a>
-          </div>
-        </row>
-      </row>
 
-      <!--- carousel 2 Section --->
-      <row class="row justify-content-center">
-        <div class="col-12">
+        <!--- carousel 2 Section --->
+        <div class="col-lg-6 col-sm-12 d-none d-sm-block">
           <div id="carousel2" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="false">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -121,7 +121,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="d-flex justify-content-center pic">
-                    <img src="images/Deep Blu/Portraits/IMG_3254.JPG" class="d-block img-fluid rounded" alt="...">
+                  <img src="images/Deep Blu/Portraits/IMG_3254.JPG" class="d-block img-fluid rounded" alt="...">
                 </div>
               </div>
               <div class="carousel-item">
@@ -144,17 +144,15 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+          <row class="row py-2 justify-content-center">
+            <div class="col-auto mx-auto">
+              <a class="btn" href="Portraits.html" role="button"><b>More Like This</b></a>
+            </div>
+          </row>
         </div>
-        <row class="row py-2 justify-content-center">
-          <div class="col-auto mx-auto">
-            <a class="btn" href="Portraits.html" role="button"><b>More Like This</b></a>
-          </div>
-        </row>
-      </row>
 
-      <!--- Carousel 3 Section --->
-      <row class="row justify-content-center">
-        <div class="col-12">
+        <!--- Carousel 3 Section --->
+        <div class="col-lg-6 col-sm-12 d-none d-sm-block">
           <div id="carousel3" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="false">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -187,13 +185,14 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+          <row class="row py-2 justify-content-center" id="jumptoaboutme">
+            <div class="col-auto mx-auto">
+              <a class="btn" href="Food.html" role="button"><b>More Like This</b></a>
+            </div>
+          </row>
         </div>
-        <row class="row py-2 justify-content-center" id="jumptoaboutme">
-          <div class="col-auto mx-auto">
-            <a class="btn" href="Food.html" role="button"><b>More Like This</b></a>
-          </div>
-        </row>
-      </row>
+      </div>
+
 
       <!--- ###### about me section ###### --->
       <div class="row justify-content-center" id="aboutmediv">
@@ -201,7 +200,7 @@
           <h1 class="p-2">- About Me -</h1>
         </div>
         <row class="row justify-content-evenly">
-          <div class="col">
+          <div class="col-lg-6 col-sm-12 mb-5">
             <p>This is the part where devin writes about himself</p>
             <p>His past, present, and future</p>
             <p>All of his hopes and dreamstextfiller textfillertextfillertextfill ertextfillertextfi llertextfill ertextfillertextfiller</p>
@@ -210,7 +209,7 @@
             <br>
             <img class="img-md" src="images/Devin Sig.png" alt="signature" id="signature">
           </div>
-          <div class="col">
+          <div class="col-lg-6 col-sm-12 mb-4">
             <img src="images/Devin_Wilcox_Pic.jpg" class="img-fluid float-sm-center" alt="Devin Wilcox headshot">
           </div>
         </row>
@@ -229,19 +228,19 @@
 
 
     </div>
+    <footer class="footer">
+      <div class="row">
+        <div class="col-lg-2 col-sm-2">
+          <a class="no-underline" href="#top" style="font-size:32px;">D.W.</a>
+        </div>
+        <div class="col-lg-10 col-sm-10 pe-1 align-self-end float-end">
+          <p style="font-size:14px;" class="text-end">© 2022 Deep Blu Photography. All Rights Reserved. By <a href="https://www.sudobyte.com/" class="link">SudoByte Solutions</a></p>
+        </div>
+      </div>
+    </footer>
   </row>
-</div>
 
-<footer class="footer">
-  <div class="row justify-content-between" id="footer">
-    <div class="col-2">
-      <a class="navbar-brand" href="#top" style="font-size:32px;">D.W.</a>
-    </div>
-    <div class="col-lg-5 col-sm-10 align-self-end">
-      <p style="font-size:14px;">© 2022 Deep Blu Photography. All Rights Reserved. By <a href="https://www.sudobyte.com/" class="link">SudoByte Solutions</a></p>
-    </div>
-  </div>
-</footer>
+
 
 
   <script src="js/main.js"></script>

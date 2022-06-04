@@ -27,6 +27,7 @@
   margin: auto;
 }
 
+
 .carousel {
   height: 75vh;
   background-color: #f0ffff;
@@ -80,10 +81,11 @@
   background-color: #d3d3d3;
 }
 
-#footer{
+.footer{
   background-color: #5F9EA0;
 }
 
 #page_background{
   background-color: #f0ffff;
+  margin: 0px;
 }
