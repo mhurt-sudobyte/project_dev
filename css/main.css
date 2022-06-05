@@ -11,11 +11,6 @@
   z-index: 2;
   width:100vw;
   height:5vw;
-
-
-
-
-
 }
 
 #sectionheadertext{
@@ -101,15 +96,13 @@
   color:white;
 }
 .devlogo{
-  width:30%;
+  width:29%;
   height:10%;
   z-index: 1;
   position:relative;
-  float:left;
-  margin-top:2%;
+  margin-top:4%;
 }
 .container-fluid{
-  positon:relative;
   z-index:0;
   position:absolute;
 }
