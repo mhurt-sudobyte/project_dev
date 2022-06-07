@@ -24,13 +24,17 @@
 
 <body>
 
-  <row id="top"></row>
+  <!--- displays on smaller screens only--->
+  <row id="top" class="row justify-content-center d-block d-md-none m-0">
+    <div class="col-8 offset-2 justify-content-center">
+      <a class="d-flex justify-content-center" href="#"><img src="images/deepblu_Logo.png" height="200" width="200"></a>
+    </div>
+  </row>
+
   <!--- Navbar Section --->
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top mb-3">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img class ='devlogo' src="images/deepblu_Logo.png" alt="">
-      </a>
+      <a  href="index.html" class="navbar-brand d-sm-none d-md-block"><img src="images/devShutterLogo.png" width="50" height="50">Deep Blu Studio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -38,12 +42,13 @@
         <ul class="navbar-nav me-auto mb-3 mb-lg-0">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Cityscapes
+              Galleries
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a href="index.html" class="dropdown-item">Galleries</a></li>
+              <li><a href="#top" class="dropdown-item">Cityscapes</a></li>
               <li><a href="Portraits.html" class="dropdown-item">Portraits</a></li>
               <li><a href="Food.html" class="dropdown-item">Food</a></li>
+              <li><a href="Misc.html" class="dropdown-item">Misc</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -58,8 +63,7 @@
   </nav>
 
   <div class="row me-0 justify-content-center">
-    <div class="space">
-    </div>
+
     <div class="row">
 
       <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
