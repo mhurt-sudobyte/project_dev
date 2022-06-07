@@ -6,11 +6,18 @@
   font-family:
 }
 
+
+#top{
+  background-image: url('../images/Deep Blu/Cityscape/Skylines.jpg');
+  background-position: top, center;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+
 .navbar{
   background-color: #5F9EA0;
-  z-index: 2;
-  width:100vw;
-  height:5vw;
+
 }
 
 #sectionheadertext{
@@ -92,31 +99,7 @@
   background-color: white;
   margin: 0px;
 }
+
 .devin{
   color:white;
-}
-.devlogo{
-  width:100%;
-  height:100%;
-  z-index: 1;
-  position:relative;
-
-
-}
-.container-fluid{
-  z-index:0;
-  position:absolute;
-}
-
-
-.navbar-brand{
-  width:11%;
-  height:auto;
-  position:relative;
-  margin-top:1.5%;
-  z-index:0;
-}
-.space{
-  height:4vh;
-  width:100vw;
 }
