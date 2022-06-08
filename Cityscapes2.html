@@ -24,13 +24,17 @@
 
 <body>
 
-  <row id="top"></row>
+  <!--- displays on smaller screens only--->
+  <row id="top" class="row justify-content-center d-block d-md-none m-0">
+    <div class="col-8 offset-2 justify-content-center">
+      <a class="d-flex justify-content-center" href="#"><img src="images/deepblu_Logo.png" height="200" width="200"></a>
+    </div>
+  </row>
+
   <!--- Navbar Section --->
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top mb-3">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img class ='devlogo' src="images/deepblu_Logo.png" alt="">
-      </a>
+      <a  href="index.html" class="navbar-brand d-sm-none d-md-block"><img src="images/devShutterLogo.png" width="50" height="50">Deep Blu Studio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -44,6 +48,7 @@
               <li><a href="index.html" class="dropdown-item">Galleries</a></li>
               <li><a href="Portraits.html" class="dropdown-item">Portraits</a></li>
               <li><a href="Food.html" class="dropdown-item">Food</a></li>
+              <li><a href="Misc.html" class="dropdown-item">Misc</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -64,7 +69,7 @@
       </div>
       <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
         <div class="" data-toggle="modal" data-target="#cityModal">
-          <a href="#cityGallery" data-slide-to="0"><img src="images/Deep Blu/Cityscape/chipotle.jpg" class="w-100 shadow-1-strong rounded mt-4 mb-4" alt=""></a>
+          <a href="#cityGallery" data-slide-to="0"><img src="images/Deep Blu/Cityscape/chipotle.jpg" class="w-100 shadow-1-strong rounded mb-4" alt=""></a>
         </div>
         <div class="" data-toggle="modal" data-target="#cityModal">
           <a href="#cityGallery" data-slide-to="3"><img src="images/Deep Blu/Cityscape/dock1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt=""></a>
@@ -86,7 +91,7 @@
 
       <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
         <div class="" data-toggle="modal" data-target="#cityModal">
-          <a href="#cityGallery" data-slide-to="1"><img src="images/Deep Blu/Cityscape/dayalley.jpg" class="w-100 shadow-1-strong rounded mt-4 mb-4" alt=""></a>
+          <a href="#cityGallery" data-slide-to="1"><img src="images/Deep Blu/Cityscape/dayalley.jpg" class="w-100 shadow-1-strong rounded mb-4" alt=""></a>
         </div>
         <div class="" data-toggle="modal" data-target="#cityModal">
           <a href="#cityGallery" data-slide-to="4"><img src="images/Deep Blu/Cityscape/dock2.JPG" class="w-100 shadow-1-strong rounded mb-4" alt=""></a>
@@ -108,7 +113,7 @@
 
       <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
         <div class="" data-toggle="modal" data-target="#cityModal">
-          <a href="#cityGallery" data-slide-to="2"><img src="images/Deep Blu/Cityscape/candence.JPG" class="w-100 shadow-1-strong rounded mt-4 mb-4" alt=""></a>
+          <a href="#cityGallery" data-slide-to="2"><img src="images/Deep Blu/Cityscape/candence.JPG" class="w-100 shadow-1-strong rounded mb-4" alt=""></a>
         </div>
         <div class="" data-toggle="modal" data-target="#cityModal">
           <a href="#cityGallery" data-slide-to="5"><img src="images/Deep Blu/Cityscape/graffiti.JPG" class="w-100 shadow-1-strong rounded mb-4" alt=""></a>
@@ -273,11 +278,8 @@
     </nav>
 
     <footer class="footer">
-      <div class="row">
-        <div class="col-lg-2 col-sm-2">
-          <a class="no-underline" href="#top" style="font-size:32px;">D.W.</a>
-        </div>
-        <div class="col-lg-10 col-sm-10 pe-1 align-self-end float-end">
+      <div class="row justify-content-end">
+        <div class="col-12 pe-1 align-self-end float-end">
           <p style="font-size:14px;" class="text-end">© 2022 Deep Blu Photography. All Rights Reserved. By <a href="https://www.sudobyte.com/" class="link">SudoByte Solutions</a></p>
         </div>
       </div>
