@@ -5,8 +5,32 @@
   padding: 0;
   font-family:
 }
+.deepBlue_text{
+  display:none;
+}
+.image2{
+  height:100%;
+  width:100%;
+  position:relative;
+  margin-top:.9%;
+}
+.image1{
+  display:none;
+}
+.navbar-brand{
+  width:9vw;
+  height:18vh;
+}
+.space{
+  width:100vw;
+  height:5vh;
+}
 
 
+
+.container-fluid{
+  position:absolute;
+}
 #top{
   background-image: url('../images/Deep Blu/Cityscape/Skylines.jpg');
   background-position: top, center;
@@ -17,6 +41,8 @@
 
 .navbar{
   background-color: #5F9EA0;
+  width:100vw;
+  height:9vh;
 
 }
 
@@ -102,4 +128,37 @@
 
 .devin{
   color:white;
+}
+@media (max-width:990px){
+.deepBlue_text{
+  display:block;
+  float:right;
+  padding-left: 5px;
+  padding-top: 10px;
+}
+.image2{
+  display:absolute;
+  display:none;
+}
+.image1{
+  display:block;
+  position:none;
+  margin:none;
+  float:left;
+}
+.container-fluid{
+  position:relative;
+}
+.navbar{
+  width:auto;
+  height:auto;
+}
+.navbar-brand{
+  height:auto;
+  width:auto;
+}
+.space{
+  width:0vw;
+  height:0vh;
+}
 }
